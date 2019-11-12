@@ -2,7 +2,7 @@ import socket
 
 sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
-sock.bind (('127.0.0.1',5050))
+sock.bind (('192.168.88.89',5050))
 client = []
 print('Start Server')
 while 1 :

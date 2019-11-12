@@ -5,7 +5,7 @@ def read_sok():
          data = sor.recv(1024)
          print(data.decode('utf-8'))
 
-server = '127.0.0.1', 5050
+server = '192.168.88.89', 5050
 alias = input("Введiть псевдонiм: ")
 sor = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 sor.bind(('127.0.0.1', 0))
