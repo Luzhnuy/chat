@@ -8,7 +8,7 @@ def read_sok():
 server = '192.168.88.89', 5050
 alias = input("Введiть псевдонiм: ")
 sor = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-sor.bind(('127.0.0.1', 0))
+sor.bind(('', 0))
 sor.sendto((alias+' Connect to server').encode('utf-8'), server)
 potok = threading.Thread(target=read_sok)
 potok.start()
